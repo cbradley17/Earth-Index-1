@@ -9,8 +9,8 @@ class GovdataSpider(scrapy.Spider):
     name = "EIA2"
     allowed_domains = ["EIA.gov"]
     start_urls = [
-        "http://www.eia.gov/forecasts/steo/report/us_oil.cfm",       #target url
-    ]
+        "http://www.eia.gov/forecasts/steo/report/us_oil.cfm",
+    ]                                                                #target url
 
     def parse(self, response):
         log.msg('parse(%s)' % response.url, level = log.DEBUG)  
